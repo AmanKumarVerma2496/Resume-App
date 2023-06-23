@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+      
+    <title>Resume</title>
+    
+</head>
+
+<body>
+    <!--html code-->
+    
+    <div class="container" id="cv-form">
+        <!--resume-->
+        <h1 class="text-center my-2">Resume</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <!--Name Field for candidate-->
+                <h2>
+                    <div class="form-group">
+                        <label for="namefield"></label>
+                        <input type="text" id="namefield" placeholder="Enter Candidate Name" class="form-control">
+                    </div>
+                </h2>
+
+                <!--first column-->
+                <!--Summary-->
+                <h3>
+                    <div class="form-group mt-2" id="Sum1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path
+                                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 12h8v2H6v-2zm0-3h12v2H6V9zm0-3h12v2H6V6z" />
+                        </svg>
+
+                        <label for=""><b>Summary</b></label>
+                        <ul class="no-bullets">
+                            <li>
+                                <textarea placeholder="Enter Summary in detail" class="form-control webField"
+                                    rows="4"></textarea>
+                                <div class="container text-center mt-2" id="weAddButtonsix">
+                                    <button onclick="addNewSummaryField()" class="btn btn-primary btn-sm">Add</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </h3>
+                <div class="form-group mt-3">
+                    <label for=""><b>Select Your Photo</label></b>
+                    <input id="imgField" type="file" class="form-control" />
+                </div>
+                <!--personal Information-->
+                <!--Name field-->
+                <h4>Personal Information</h4>
+                <div class="form-group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-dash-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z" />
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg>
+                    <label for="namefield"><b>Your Name</label></b>
+                    <input type="text" id="namefield" placeholder="Enter Your Name" class="form-control">
+                </div>
+                <!--Contact field(Phone number)-->
+                <div class="form-group mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-phone" viewBox="0 0 16 16">
+                        <path
+                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <label for="contactfield"><b>Contact Details</label></b>
+                    <input type="text" id="contactfield" placeholder="Enter Your phone number" class="form-control">
+                </div>
+                <!--Email field-->
+                <div class="form-group mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                        <path
+                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                    </svg>
+                    <label for="contactfield11"><b>Email</label></b>
+                    <input type="text" id="contactfield11" placeholder="Enter Your Email" class="form-control">
+                </div>
+                <!--Address field-->
+                <div class="form-group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1C4.686 1 2 3.686 2 7.001c0 2.502 1.978 4.713 4.802 5.426.33.079.673.118 1.02.118.348 0 .69-.04 1.02-.118C12.022 11.714 14 9.503 14 7.001 14 3.686 11.314 1 8 1zm0 9a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                    </svg>
+                    <label for="addressfield"><b>Your Address</label></b>
+                    <textarea id="addressfield" placeholder="Enter Your Address" class="form-control">
+
+                        </textarea>
+                </div>
+                <!--Important Links field-->
+                <!--LinkedIn-->
+                <p class="text-secondary my-3"><b>Important Links :-</p></b>
+                <div class="form-group mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                    <label for="linkfield"><b>linkedIn</label></b>
+                    <input type="text" id="linkedinfield" placeholder="Enter Your linkedIn Profile link"
+                        class="form-control">
+                </div>
+                <!--HackerRAnk-->
+                <div class="form-group mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"
+                        fill="currentColor">
+                        <path
+                            d="M256 0C114.62 0 0 114.62 0 256s114.62 256 256 256 256-114.62 256-256S397.38 0 256 0zm-37.5 399.94h-60.282V297.938h60.282v102.002zm-60.303-134.388h60.282v62.96h-60.282v-62.96zm60.303-97.602h-60.282V96.9h60.282v70.05zM384.47 384.5h-60.282V265.03c0-24.6-9.14-38.868-32.75-38.868-25.994 0-34.682 18.112-34.682 38.868v118.6h-60.282V256.145c0-54.516 24.6-89.962 69.364-89.962 40.69 0 63.85 25.658 63.85 72.91v145.497z" />
+                    </svg>
+                    <label for="codingfield"><b>HackerRank</label></b>
+                    <input type="text" id="hackerrankfield" placeholder="Enter Your HackerRank Profile Link"
+                        class="form-control">
+                </div>
+                <!--LeeTCode-->
+                <div class="form-group mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"
+                        fill="currentColor">
+                        <path
+                            d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zm-35.57 382.7c-6.013 6.014-14.03 9.33-22.43 9.33-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32c0 8.398-3.317 16.42-9.329 22.43L357.6 357.6C396.6 328.2 416 287.7 416 240 416 132.3 323.7 40 216 40S16 132.3 16 240c0 107.7 92.3 200 200 200 47.69 0 88.18-19.42 117.6-58.4L220.4 347.4zM80 240c0-79.53 64.47-144 144-144s144 64.47 144 144-64.47 144-144 144S80 319.5 80 240zm254.9-129.9c-4.063 4.062-10.62 4.062-14.68 0l-35.07-35.07c-4.062-4.063-4.062-10.62 0-14.68 4.063-4.062 10.62-4.062 14.68 0l35.07 35.07c4.062 4.062 4.062 10.62 0 14.68zM240 48c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32z" />
+                    </svg>
+                    <label for="codingfield"><b>Leetcode</label></b>
+                    <input type="text" id="leetcodefield" placeholder="Enter Your Leetcode Profile Link"
+                        class="form-control">
+                </div>
+                <!--GitHub-->
+                <div class="form-group mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                    <label for="codestracking"><b>GitHub</label></b>
+                    <input type="text" id="gitfield" placeholder="Enter Your GitHub Account Link" class="form-control">
+                </div>
+            </div>
+    
+            <!--Professional Information-->
+        
+            <div class="col-md-6">
+                <!--Second column-->
+                <h4>Professional Information</h4>
+                <!--Education-->
+                <div class="form-group mt-2" id="eq">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M12 2L2 9.2V22h20V9.2L12 2zm0 2.2l6 3.6V20h-4v-5h-4v5H6V7.8l6-3.6zm0 2.2l-4 2.4L4 6.6V20h2V8.4L12 11l6-3.6V20h2V6.6l-4 2.4z" />
+                    </svg>
+
+                    <label for=" "><b>Education</label></b>
+                    <textarea placeholder="Enter Qualification in Highest to Lowest order" class="form-control edField"
+                        rows="3"></textarea>
+                    <div class="container text-center mt-2" id="weAddButton">
+                        <button onclick="addNewEQualifiactionField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!--Work Experience-->
+                <div class="form-group mt-2" id="we">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M21 2H3C1.897 2 1 2.897 1 4v16c0 1.103.897 2 2 2h18c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 18H3V4h18v16zm-9-8h-4v4h4v-4zm0-8h-4v4h4V4z" />
+                    </svg>
+
+                    <label for=" "><b>Work Experience</label></b>
+                    <textarea placeholder="Enter Your Work Experience If Any" class="form-control wetField"
+                        rows="3"></textarea>
+                    <div class="container text-center mt-2" id="weAddButtonOne">
+                        <button onclick="addNewWExperienceField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!--Academic Projects-->
+                <div class="form-group mt-2" id="ap">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M4 2h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zm0 6h4v4h-4zm0 6h4v4h-4zm-6 0h4v4h-4zm-6 0h4v4H4zm0-6h4v4H4zm6 0h4v4h-4zm0-6h4v4h-4zm6 0h4v4h-4zm0-6h4v4h-4zM4 14h4v4H4zm0-6h4v4H4zm6 6h4v4h-4zm0-6h4v4h-4z" />
+                    </svg>
+
+
+                    <label for=" "><b>Academic Projects</label></b>
+                    <textarea placeholder="Enter Academic projects here in detail" class="form-control apField"
+                        rows="2"></textarea>
+                    <div class="container text-center mt-2" id="weAddButtontwo">
+                        <button onclick="addNewAprojects()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <!--Professional Projects-->
+                <div class="form-group mt-2" id="pp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M13.586 6L12 4.414 10.414 6H4v12h16V6h-6.414zM14 8h3v10h-3V8zm-5 0h3v10H9V8zm-4 0h2v10H5V8zm12-2h2v12h-2V6zm-3 0h2v12h-2V6zm-3 0h2v12h-2V6z" />
+                    </svg>
+
+                    <label for=" "><b>Professional Projects</label></b>
+                    <textarea placeholder="Enter Your Key Development Projects" class="form-control ppField"
+                        rows="3"></textarea>
+                    <div class="container text-center mt-2" id="weAddButtonthree">
+                        <button onclick="addNewPprojects()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                    <!--Technical skills-->
+                    <div class="form-group mt-2" id="ppe">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path
+                                d="M20 4h-4V2h-4v2H8V2H4v2H0v20h24V4zm-2 18H2V8h16v14zm-4-4H4v-2h10v2zm0-4H4v-2h10v2zm0-4H4V8h10v2zm2-10H2V4h16v2z" />
+                        </svg>
+
+                        <label for=" "><b>Technical Skills</label></b>
+                        <textarea placeholder="Enter Your Technical Skills" class="form-control ttField"
+                            rows="3"></textarea>
+                        <div class="container text-center mt-2" id="weAddButtonfive">
+                            <button onclick="addNewTechskill()" class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Certificates Details-->
+                <div class="form-group mt-2" id="ct">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M12 2L2 6v12l10 4 10-4V6L12 2zm0 16.3l-8-3.2V7l8 3.2V18zM4 8l8 3.2L20 8v2.6L12 14l-8-3.2V8z" />
+                    </svg>
+
+                    <label for=" "><b>Certifications</label></b>
+                    <textarea placeholder="Enter training certification details" class="form-control wettField"
+                        rows="2"></textarea>
+                    <div class="container text-center mt-2" id="weAddButtonfour">
+                        <button onclick="addNewCertifications()" class="btn btn-primary btn-sm">Add
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--Generate Resume button Function-->
+        <div class="container text-center mt-4">
+            <button onclick="GenerateResume()" class="btn btn-primary btn-lg">Generate Resume
+            </button>
+        </div>
+    </div>
+    <!--CV Template-->
+    <div class="container" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background">
+                <!--first column-->
+                <img src="https://cdn-icons-png.flaticon.com/512/8815/8815065.png" alt="" class="img-fluid myimg"
+                    id="imgTemplate" />
+                <div class="container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-dash-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11 7.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z" />
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        <!--NAme-->
+                        <p id="nameT1">Aman Kumar Verma</p>
+                    </svg>
+                    <!--Summary-->
+                    <p id="Sum1T">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolores sit fugiat facere nam cum exercitationem velit dolorem eum consequuntur distinctio fuga
+                        ipsum,
+                        commodi facilis itaque dolore, in, incidunt porro ab?</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-phone" viewBox="0 0 16 16">
+                        <path
+                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        <!--phone number-->
+                        <p id="ContactT">+917081993902,+917349077991</p>
+                    </svg></br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                        <path
+                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                        <!--Email-->
+                        <p id="emailT">amanv7518@gmail.com</p>
+                    </svg></br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1C4.686 1 2 3.686 2 7.001c0 2.502 1.978 4.713 4.802 5.426.33.079.673.118 1.02.118.348 0 .69-.04 1.02-.118C12.022 11.714 14 9.503 14 7.001 14 3.686 11.314 1 8 1zm0 9a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                        <!--Address-->
+                        <p id="addressT">Ghazipur City-233001,Uttar Pradesh,India</p>
+                    </svg></br>
+                    <hr />
+                    <!--Important Links-->
+                    <!--LinkedIn-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        <p><a id="liT" href="#1">https://www.linkedIn.com</a></p>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"
+                        fill="currentColor">
+                        <path
+                            d="M256 0C114.62 0 0 114.62 0 256s114.62 256 256 256 256-114.62 256-256S397.38 0 256 0zm-37.5 399.94h-60.282V297.938h60.282v102.002zm-60.303-134.388h60.282v62.96h-60.282v-62.96zm60.303-97.602h-60.282V96.9h60.282v70.05zM384.47 384.5h-60.282V265.03c0-24.6-9.14-38.868-32.75-38.868-25.994 0-34.682 18.112-34.682 38.868v118.6h-60.282V256.145c0-54.516 24.6-89.962 69.364-89.962 40.69 0 63.85 25.658 63.85 72.91v145.497z" />
+                        <!--Hacker RAnk-->
+                        <p><a id="haT" href="#1">https://www.HackerRank.com</a></p>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"
+                        fill="currentColor">
+                        <path
+                            d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zm-35.57 382.7c-6.013 6.014-14.03 9.33-22.43 9.33-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32c0 8.398-3.317 16.42-9.329 22.43L357.6 357.6C396.6 328.2 416 287.7 416 240 416 132.3 323.7 40 216 40S16 132.3 16 240c0 107.7 92.3 200 200 200 47.69 0 88.18-19.42 117.6-58.4L220.4 347.4zM80 240c0-79.53 64.47-144 144-144s144 64.47 144 144-64.47 144-144 144S80 319.5 80 240zm254.9-129.9c-4.063 4.062-10.62 4.062-14.68 0l-35.07-35.07c-4.062-4.063-4.062-10.62 0-14.68 4.063-4.062 10.62-4.062 14.68 0l35.07 35.07c4.062 4.062 4.062 10.62 0 14.68zM240 48c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32z" />
+
+                        <p><a id="LeT" href="#1">https://www.Leetcode.com</a></p>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+
+                        <p><a id="giT" href="#1">https://www.GitHub.com</a></p>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="col-md-8 py-5">
+                <!--2nd column-->
+                <h1 id="nameT2" class="text-center" style="font-weight: 980;">Aman Kumar Verma</h1>
+                <!--Education-->
+                <div class="card mt-4">
+                    <div class="card-header background">
+
+                        <h3>Education</h3>
+                    </div>
+                    <div id="eqT" class="card-body">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--workExperience-->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div id="weT" class="card-body">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Academic projects-->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Projects</h3>
+                    </div>
+                    <div id="apT" class="card-body">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--professional Projects-->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Professional Projects</h3>
+                    </div>
+                    <div id="ppT" class="card-body">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--technical skills-->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div id="tsT" class="card-body">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Certifications-->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Certifications</h3>
+                    </div>
+                    <div id="ceT" class="card-body">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="print-section" class="container mt-3 text-center">
+                    <button onclick="print()" class="btn background">Print</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

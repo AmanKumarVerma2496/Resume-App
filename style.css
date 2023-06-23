@@ -1,0 +1,51 @@
+/*body{
+  background-color: aqua;
+}*/
+/*#cv-form{
+    display: none;
+}*/
+
+#cv-template {
+  display: none;
+}
+
+.myimg {
+  border-radius: 50%;
+  width: 225px;
+  height: 250px;
+  /* Optional, if you want to specify a fixed height */
+}
+
+
+
+.background {
+  background-color: aqua;
+}
+
+.no-bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.no-bullets li::marker {
+  display: none;
+}
+
+/* .align-center {
+    text-align: center;
+  }
+  
+  .align-right {
+    text-align: right;
+  }
+  */
+.align-justify {
+  text-align: justify;
+}
+
+@page {
+  color-profile: aqua;
+}
+.bi{
+  border: 2px solid red;
+}
