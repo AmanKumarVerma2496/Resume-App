@@ -12,7 +12,16 @@
     
       
     <title>Resume</title>
-    
+     <style>
+        @media print {
+            .left-side {
+                float: left;
+            }
+            .right-side {
+                float: right;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -250,6 +259,7 @@
         </div>
     </div>
     <!--CV Template-->
+    
     <div class="container" id="cv-template">
         <div class="row">
             <div class="col-md-4 text-center py-5 background">
